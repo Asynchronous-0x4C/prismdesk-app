@@ -1,0 +1,77 @@
+name: Device report
+description: Tell us whether it works on your tablet or phone — good news welcome
+title: "[Device] "
+labels: ["device report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Five devices have been tested by hand. Everything else in
+        [docs/devices.md](https://github.com/Asynchronous-0x4C/prismdesk-app/tree/main/docs/devices.md) comes from reports like this
+        one, so **a report that says "it just works" is worth as much as one
+        that says it doesn't**.
+
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: The name it is sold under.
+      placeholder: "Lenovo Idea Tab Pro"
+    validations:
+      required: true
+
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      placeholder: "Android 16"
+    validations:
+      required: true
+
+  - type: input
+    id: screen
+    attributes:
+      label: Screen
+      description: Resolution, and the refresh rate if you know it.
+      placeholder: "2944×1840, 144 Hz"
+
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: How did it go
+      options:
+        - It works
+        - It works, with problems
+        - It does not work
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tried
+    attributes:
+      label: What you tried
+      description: Only tick what you actually tried.
+      options:
+        - label: Using it as a second screen
+        - label: HDR content
+        - label: Pen (pressure or tilt)
+        - label: Touch and on-screen keyboard
+        - label: The camera as a webcam
+        - label: Audio
+        - label: More than one device at the same time
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything worth knowing
+      description: >
+        What was good, what was not. If something failed, say what you saw —
+        that turns this into a bug report we can act on.
+
+  - type: input
+    id: versions
+    attributes:
+      label: PrismDesk versions (PC / device)
+      placeholder: "1.0.0 / 1.0.0"
+    validations:
+      required: true

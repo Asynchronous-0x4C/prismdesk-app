@@ -1,0 +1,383 @@
+PrismDesk - Third-Party Software Notices
+========================================
+
+Product   : PrismDesk for Windows 1.0.0
+Applies to: WindowsHost.exe, PrismDeskSetup.exe, PrismDeskCam.dll,
+            Driver\PrismDeskVdd.dll, Driver\PrismDeskVdd.inf, Driver\PrismDeskVdd.cat,
+            and the PrismDesk installer (PrismDesk-1.0.0-setup.exe)
+Updated   : 2026-09-06
+
+PrismDesk is proprietary software licensed under the PrismDesk End User
+License Agreement (EULA.txt). It incorporates the third-party components
+listed below. Each component is provided under its own license, reproduced
+here as required by that license.
+
+Nothing in the PrismDesk EULA limits or modifies the rights, permissions or
+disclaimers granted by these licenses for the respective components. Where
+the PrismDesk EULA and a license below conflict, the license below prevails
+for that component.
+
+The PrismDesk Android client is a separate program and ships its own notices
+(THIRD_PARTY_NOTICES_ANDROID.txt).
+
+
+CONTENTS
+--------
+  1. Virtual Display Driver ("MttVDD") ................. MIT License
+  2. IddSampleDriver (roshkins / ge9) .................. MIT / CC0 / Public Domain
+  3. Microsoft Indirect Display Driver Sample (IddCx) ... Microsoft Public License
+  4. Dear ImGui ........................................ MIT License
+  5. stb_truetype / stb_rectpack / stb_textedit ........ MIT License or Public Domain
+  6. QR Code generator library (Project Nayuki) ........ MIT License
+  7. ViGEmClient ....................................... MIT License
+  8. NVIDIA Video Codec SDK interface headers .......... MIT License (headers only)
+  9. Inno Setup ........................................ (installer; see note)
+     Trademarks
+
+
+-----------------------------------------------------------------------------
+1. Virtual Display Driver ("MttVDD")
+-----------------------------------------------------------------------------
+
+   Source     : https://github.com/VirtualDrivers/Virtual-Display-Driver
+   Copyright  : Copyright (c) 2024 Virtual Display
+   License    : MIT License
+   Used in    : Driver\PrismDeskVdd.dll, Driver\PrismDeskVdd.inf
+
+   The PrismDesk virtual display driver is a derivative work of this project.
+   Contributors credited by the project include MikeTheTech, zjoasan, Bud,
+   Baloukj, Anakngtokwa, AKATrevorJay and LexTrack.
+
+   MIT License
+
+   Copyright (c) 2024 Virtual Display
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+
+-----------------------------------------------------------------------------
+2. IddSampleDriver (roshkins / ge9)
+-----------------------------------------------------------------------------
+
+   Source     : https://github.com/roshkins/IddSampleDriver
+                https://github.com/ge9/IddSampleDriver
+   License    : MIT License, CC0 1.0 Universal, or Public Domain, at your
+                option, for the changes made by the respective authors
+   Used in    : Driver\PrismDeskVdd.dll, Driver\PrismDeskVdd.inf
+
+   The component in section 1 is itself a derivative work of these projects.
+   The authors state:
+
+     "License MIT and CC0 or Public Domain (for changes I made, check with
+      Microsoft for their license), whichever is least restrictive
+      -- Use it AS IS - NO IMPLICIT OR EXPLICIT warranty"
+
+   The license of the underlying Microsoft sample is reproduced in section 3.
+   The CC0 1.0 Universal text is available at
+   https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+   MIT License
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+
+-----------------------------------------------------------------------------
+3. Microsoft Indirect Display Driver Sample (IddCx)
+-----------------------------------------------------------------------------
+
+   Source     : https://github.com/microsoft/Windows-driver-samples
+                (video/IndirectDisplay)
+   Copyright  : Copyright (c) Microsoft Corporation
+   License    : Microsoft Public License (MS-PL)
+   Used in    : Driver\PrismDeskVdd.dll, Driver\PrismDeskVdd.inf
+
+   The components in sections 1 and 2 are derivative works of this sample.
+   Portions of the driver source retain the notice
+   "Copyright (c) Microsoft Corporation".
+
+   This license does not grant rights to use Microsoft's name, logo or
+   trademarks (MS-PL section 3(A)).
+
+   The Microsoft Public License (MS-PL)
+   Copyright (c) 2015 Microsoft
+
+   This license governs use of the accompanying software. If you use the software, you
+    accept this license. If you do not accept the license, do not use the software.
+
+   1. Definitions
+    The terms "reproduce," "reproduction," "derivative works," and "distribution" have the
+    same meaning here as under U.S. copyright law.
+    A "contribution" is the original software, or any additions or changes to the software.
+    A "contributor" is any person that distributes its contribution under this license.
+    "Licensed patents" are a contributor's patent claims that read directly on its contribution.
+
+   2. Grant of Rights
+    (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+    (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+
+   3. Conditions and Limitations
+    (A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
+    (B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+    (C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+    (D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+    (E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+
+
+-----------------------------------------------------------------------------
+4. Dear ImGui
+-----------------------------------------------------------------------------
+
+   Source     : https://github.com/ocornut/imgui
+   Version    : v1.92.9b (commit f1cc2ae15e53a861a874c3034aae6798fde194ab)
+   Copyright  : Copyright (c) 2014-2026 Omar Cornut
+   License    : MIT License
+   Used in    : WindowsHost.exe
+
+   The MIT License (MIT)
+
+   Copyright (c) 2014-2026 Omar Cornut
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+
+-----------------------------------------------------------------------------
+5. stb_truetype / stb_rectpack / stb_textedit
+-----------------------------------------------------------------------------
+
+   Source     : https://github.com/nothings/stb
+                (bundled with Dear ImGui as imstb_truetype.h,
+                 imstb_rectpack.h, imstb_textedit.h - slightly modified)
+   Copyright  : Copyright (c) 2017 Sean Barrett
+   License    : MIT License or Public Domain (dual, at your option)
+   Used in    : WindowsHost.exe
+
+   ------------------------------------------------------------------------------
+   This software is available under 2 licenses -- choose whichever you prefer.
+   ------------------------------------------------------------------------------
+   ALTERNATIVE A - MIT License
+   Copyright (c) 2017 Sean Barrett
+   Permission is hereby granted, free of charge, to any person obtaining a copy of
+   this software and associated documentation files (the "Software"), to deal in
+   the Software without restriction, including without limitation the rights to
+   use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+   of the Software, and to permit persons to whom the Software is furnished to do
+   so, subject to the following conditions:
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+   ------------------------------------------------------------------------------
+   ALTERNATIVE B - Public Domain (www.unlicense.org)
+   This is free and unencumbered software released into the public domain.
+   Anyone is free to copy, modify, publish, use, compile, sell, or distribute this
+   software, either in source code form or as a compiled binary, for any purpose,
+   commercial or non-commercial, and by any means.
+   In jurisdictions that recognize copyright laws, the author or authors of this
+   software dedicate any and all copyright interest in the software to the public
+   domain. We make this dedication for the benefit of the public at large and to
+   the detriment of our heirs and successors. We intend this dedication to be an
+   overt act of relinquishment in perpetuity of all present and future rights to
+   this software under copyright law.
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+   ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+   ------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------
+6. QR Code generator library (Project Nayuki)
+-----------------------------------------------------------------------------
+
+   Source     : https://github.com/nayuki/QR-Code-generator
+                https://www.nayuki.io/page/qr-code-generator-library
+   Version    : commit 3c6d0b3cefb4e049dc337e82237c9644399716a8
+   Copyright  : Copyright (c) Project Nayuki
+   License    : MIT License
+   Used in    : WindowsHost.exe
+
+   QR Code generator library (C++)
+
+   Copyright (c) Project Nayuki. (MIT License)
+   https://www.nayuki.io/page/qr-code-generator-library
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy of
+   this software and associated documentation files (the "Software"), to deal in
+   the Software without restriction, including without limitation the rights to
+   use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+   the Software, and to permit persons to whom the Software is furnished to do so,
+   subject to the following conditions:
+   - The above copyright notice and this permission notice shall be included in
+     all copies or substantial portions of the Software.
+   - The Software is provided "as is", without warranty of any kind, express or
+     implied, including but not limited to the warranties of merchantability,
+     fitness for a particular purpose and noninfringement. In no event shall the
+     authors or copyright holders be liable for any claim, damages or other
+     liability, whether in an action of contract, tort or otherwise, arising from,
+     out of or in connection with the Software or the use or other dealings in the
+     Software.
+
+
+-----------------------------------------------------------------------------
+7. ViGEmClient
+-----------------------------------------------------------------------------
+
+   Source     : https://github.com/nefarius/ViGEmClient
+   Version    : commit b66d02d57e32cc8595369c53418b843e958649b4
+   Copyright  : Copyright (c) 2017-2023 Nefarius Software Solutions e.U.
+                and Contributors
+   License    : MIT License
+   Used in    : WindowsHost.exe (statically linked; optional gamepad injection)
+
+   MIT License
+
+   Copyright (c) 2017-2023 Nefarius Software Solutions e.U. and Contributors
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to deal
+   in the Software without restriction, including without limitation the rights
+   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all
+   copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+   The ViGEmBus kernel driver is NOT distributed with PrismDesk. Gamepad
+   injection is available only if the user has installed ViGEmBus separately.
+
+
+-----------------------------------------------------------------------------
+8. NVIDIA Video Codec SDK interface headers
+-----------------------------------------------------------------------------
+
+   Source     : NVIDIA Video Codec SDK (interface headers only)
+   Version    : NVENCAPI 13.1
+   Copyright  : Copyright (c) 2010-2026 NVIDIA Corporation
+   License    : MIT License (applies to the header file only)
+   Used in    : WindowsHost.exe
+
+   Three headers are used: nvEncodeAPI.h (NVENC), and nvcuvid.h and
+   cuviddec.h (NVDEC). PrismDesk calls the NVIDIA encoder and decoder at
+   runtime through them. No NVIDIA library or sample code is distributed with
+   PrismDesk; nvEncodeAPI64.dll and nvcuvid.dll are part of the NVIDIA display
+   driver already installed on the user's computer.
+
+   These headers come from the NVIDIA Video Codec SDK itself, not from the
+   FFmpeg/nv-codec-headers mirror: that project carries a different version of
+   nvEncodeAPI.h and does not carry nvcuvid.h or cuviddec.h at all.
+
+   This copyright notice applies to this header file only:
+
+   Copyright (c) 2010-2026 NVIDIA Corporation
+
+   Permission is hereby granted, free of charge, to any person
+   obtaining a copy of this software and associated documentation
+   files (the "Software"), to deal in the Software without
+   restriction, including without limitation the rights to use,
+   copy, modify, merge, publish, distribute, sublicense, and/or sell
+   copies of the software, and to permit persons to whom the
+   software is furnished to do so, subject to the following
+   conditions:
+
+   The above copyright notice and this permission notice shall be
+   included in all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+   HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+   OTHER DEALINGS IN THE SOFTWARE.
+
+
+-----------------------------------------------------------------------------
+9. Inno Setup
+-----------------------------------------------------------------------------
+
+   Source     : https://jrsoftware.org/isinfo.php
+
+   The PrismDesk installer was created with Inno Setup,
+   Copyright (C) 1997-2026 Jordan Russell, Portions Copyright (C) 2000-2026
+   Martijn Laan. All rights reserved.
+
+   (Inno Setup's license makes this acknowledgement voluntary; it is included
+   here as a courtesy.)
+
+
+-----------------------------------------------------------------------------
+Trademarks
+-----------------------------------------------------------------------------
+
+   Windows, DirectX, Direct3D, Media Foundation and IddCx are trademarks of
+   Microsoft Corporation. NVIDIA, NVENC and NVDEC are trademarks of NVIDIA
+   Corporation. Android is a trademark of Google LLC. PrismDesk is not
+   affiliated with, sponsored by, or endorsed by Microsoft, NVIDIA or Google.
+
+-----------------------------------------------------------------------------
+End of notices.

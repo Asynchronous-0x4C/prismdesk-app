@@ -1,0 +1,142 @@
+name: Bug report
+description: Something is broken — the picture, the connection, the pen, the camera, the installer
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time.
+
+        **Do not put an order number, a licence key, an email address or a
+        public IP address in here.** This issue is public and stays public.
+        For anything with those in it, write to support@prismdesk.app instead.
+
+  - type: input
+    id: host-version
+    attributes:
+      label: PrismDesk version on the PC
+      description: The host window shows it in the title bar.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: PrismDesk version on the Android device
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is broken
+      options:
+        - No picture at all
+        - The picture, once it is there (artefacts, freezing, colours)
+        - HDR (it falls back to SDR, or looks wrong)
+        - Finding or connecting to the PC
+        - The connection drops
+        - Pen (pressure, tilt, or it behaves like a mouse)
+        - Touch or keyboard input
+        - Webcam ("PrismDesk Camera")
+        - Audio
+        - Installer, driver or uninstall
+        - Licence activation
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what you got instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce it
+      description: >
+        Step by step, from a state you can get back to. If it happens only
+        sometimes, say how often — "twice in an hour" is more useful than
+        "sometimes".
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows build
+      description: Press Win+R, type `winver`, and copy the version and build line.
+      placeholder: "Windows 11 24H2 (build 26200.xxxx)"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU (all of them)
+      description: >
+        If the PC has both an integrated and a discrete GPU, list both — which
+        one encodes matters.
+      placeholder: "NVIDIA RTX 3060 + Intel UHD 750"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Android device and version
+      placeholder: "Lenovo Tab M11, Android 16"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: link
+    attributes:
+      label: How the two are connected
+      options:
+        - Wi-Fi (both)
+        - PC on Ethernet, device on Wi-Fi
+        - USB tethering
+        - Something else (say so below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: >
+        On the PC, open PrismDesk, go to the **Log** tab and press
+        **Export diagnostics**, then drag the file in here. The file is written
+        in Japanese — that is expected, and it is still readable to us.
+        Look through it before you attach it if you would rather not share
+        something in it.
+
+
+        **If the problem is on the device** — a black screen, no sound, or you
+        can see the screen but cannot touch it — **please attach the device's
+        file too**: in the Android app open **Settings**, then **Report a
+        problem**, then **Share diagnostics**. The PC's file cannot tell us what
+        the device saw, so without it we will have to come back and ask.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the existing issues and known-issues.md.
+          required: true
+        - label: This PC runs 64-bit Windows 11, build 22000 or later.
+          required: true
+        - label: There is no licence key, order number or personal data in this issue.
+          required: true
