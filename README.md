@@ -18,13 +18,18 @@ nothing leaves your network.
 
 ---
 
-## Not released yet
+## Download
 
-PrismDesk is not out yet. There is nothing to download here.
+| | |
+|---|---|
+| **Windows host** | [PrismDesk for Windows](https://github.com/Asynchronous-0x4C/prismdesk-app/releases/latest/download/PrismDesk-Setup.exe) — signed installer, 1.0.0 |
+| **Android app** | Not public yet — it is in a closed test on Google Play (invite only) and goes up there when the test finishes |
+| **Checksums** | [SHA256SUMS.txt](https://github.com/Asynchronous-0x4C/prismdesk-app/releases/latest) |
 
-- **Get one email when it ships:** [https://prismdesk.app](https://prismdesk.app)
-- The Android app is not on Google Play yet either — it goes up when the closed
-  test finishes.
+All releases and release notes: [https://github.com/Asynchronous-0x4C/prismdesk-app/releases](https://github.com/Asynchronous-0x4C/prismdesk-app/releases).
+
+Windows will show a SmartScreen warning the first time — see
+[docs/smartscreen.md](docs/smartscreen.md) for what it says and why.
 
 ## Requirements
 
