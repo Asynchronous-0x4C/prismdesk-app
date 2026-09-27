@@ -43,9 +43,6 @@ What we can say:
 **The current release, and nothing older.** There is one release line and no
 back-ports; upgrading is the fix.
 
-Nothing has shipped yet, so there is nothing in the field to fix today. This page
-is here because the first release will need it.
-
 ## In scope
 
 - The Windows host, **including the PrismDesk virtual display driver.** It is a
