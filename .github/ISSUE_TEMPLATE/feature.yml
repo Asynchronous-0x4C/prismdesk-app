@@ -1,0 +1,51 @@
+name: Feature request
+description: Something PrismDesk should do and doesn't
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PrismDesk is built by one person, so the honest answer to most requests
+        is "not soon". Saying that up front is better than a silent backlog.
+
+        **What gets built first is what fixes a problem several people have.**
+        So describe the problem, not only the feature — the problem is the part
+        that can be solved another way.
+
+        If you are not sure it is missing, ask in
+        [Discussions](https://github.com/Asynchronous-0x4C/prismdesk-app/discussions) first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The situation you are in when PrismDesk gets in your way.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like it to do
+    validations:
+      required: true
+
+  - type: textarea
+    id: today
+    attributes:
+      label: What do you do today instead
+      description: >
+        A workaround you already use tells us how much of the problem is left
+        over.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the existing issues and discussions.
+          required: true
+        - label: >
+            I understand PrismDesk is closed source, so this is a request and
+            not something I can send a patch for.
+          required: true

@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question, or "does it work on X?"
+    url: https://github.com/Asynchronous-0x4C/prismdesk-app/discussions
+    about: Ask in Discussions. Questions get answered there, not in the issue tracker.
+  - name: Documentation
+    url: https://github.com/Asynchronous-0x4C/prismdesk-app/tree/main/docs
+    about: Setup, HDR, pen, webcam, known issues and the FAQ.
+  - name: Orders, licence keys, refunds, anything with personal data in it
+    url: mailto:support@prismdesk.app
+    about: Email instead. Issues here are public and stay public.
+  - name: Privacy
+    url: https://prismdesk.app/privacy
+    about: What PrismDesk does and does not collect.
