@@ -1,8 +1,8 @@
 PrismDesk for Android - Third-Party Software Notices
 ====================================================
 
-Product   : PrismDesk client for Android 1.0
-Updated   : 2026-09-12
+Product   : PrismDesk for Android
+Updated   : 2026-10-14
 
 PrismDesk is proprietary software licensed under the PrismDesk End User
 License Agreement (https://prismdesk.app/terms). It incorporates the

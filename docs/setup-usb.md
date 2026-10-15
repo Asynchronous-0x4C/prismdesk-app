@@ -18,9 +18,11 @@ turned on until a cable is attached.
 | **Lenovo Idea Tab Pro** | Settings → Additional connections → Tethering → **USB tethering** |
 | Anything else | Search the system settings for *USB tethering*. It is usually under tethering or hotspot. |
 
-The app helps here: the connection screen shows **"USB tethering: on (hosts over
-USB are searched too)"** or **"USB tethering: off"** with an **Open settings**
-button that jumps straight to the tethering screen. From that jump you land one
+The app helps here: under **Other ways to connect (address, USB)**, the
+connection screen shows **"USB tethering: on (hosts over USB are searched
+too)"** or **"USB tethering: off. Turn it on in the system settings to connect
+over a cable."** with an **Open settings** button that jumps straight to the
+tethering screen. From that jump you land one
 level in — **Hotspot & tethering → USB tethering** on a Pixel.
 
 Then tap **Search again** in the app. The PC appears the same way it does over
@@ -39,13 +41,15 @@ Wi-Fi.
 
 1. **Check that USB tethering is actually on.** It switches itself off when the
    cable is unplugged, and it stays off when you plug the cable back in.
-2. **Tap "Search again"** in the app. Discovery does not retry forever on its
-   own.
+2. **Tap "Search again"** in the app.
 3. **If it still hangs, suspect a VPN first.** During development a VPN on the PC
    had to be disabled before anything would connect — over the cable as much as
    over Wi-Fi.
 4. If none of that helps, the problem is more likely on the PC side than in the
-   cable; see [Set up over Wi-Fi](setup-wifi.md) for what else hides a host, and
-   open an [issue](https://github.com/Asynchronous-0x4C/prismdesk-app/issues/new/choose) with the diagnostics attached.
+   cable: look at **Readiness** on the host's Connection tab, and see
+   [Troubleshooting](troubleshooting.md) for what else hides a host. If you
+   still cannot connect, open an [issue](https://github.com/Asynchronous-0x4C/prismdesk-app/issues/new/choose) with the
+   diagnostics attached.
 
-See also: [Set up over Wi-Fi](setup-wifi.md) · [Known issues](known-issues.md)
+See also: [Set up over Wi-Fi](setup-wifi.md) · [Troubleshooting](troubleshooting.md) ·
+[Known issues](known-issues.md)

@@ -11,7 +11,8 @@ around.
 Windows 11 · Android 8.0+ · one-time purchase, no subscription, no account ·
 nothing leaves your network.
 
-[Website](https://prismdesk.app) · [Documentation](docs/faq.md) ·
+[Website](https://prismdesk.app) · [Documentation](docs/README.md) ·
+[Troubleshooting](docs/troubleshooting.md) ·
 [Discussions](https://github.com/Asynchronous-0x4C/prismdesk-app/discussions) · [Report a bug](https://github.com/Asynchronous-0x4C/prismdesk-app/issues/new/choose)
 
 ![A Windows laptop running the PrismDesk host, with an Android tablet next to it working as a second monitor](docs/img/hero.png)
@@ -22,8 +23,8 @@ nothing leaves your network.
 
 | | |
 |---|---|
-| **Windows host** | [PrismDesk for Windows](https://github.com/Asynchronous-0x4C/prismdesk-app/releases/latest/download/PrismDesk-Setup.exe) — signed installer, 1.0.0 |
-| **Android app** | Not public yet — it is in a closed test on Google Play (invite only) and goes up there when the test finishes |
+| **Windows host** | [PrismDesk for Windows](https://github.com/Asynchronous-0x4C/prismdesk-app/releases/latest/download/PrismDesk-Setup.exe) — signed installer, 1.2.0 |
+| **Android app** | [PrismDesk on Google Play](https://play.google.com/store/apps/details?id=com.prismdesk.client) |
 | **Checksums** | [SHA256SUMS.txt](https://github.com/Asynchronous-0x4C/prismdesk-app/releases/latest) |
 
 All releases and release notes: [https://github.com/Asynchronous-0x4C/prismdesk-app/releases](https://github.com/Asynchronous-0x4C/prismdesk-app/releases).
@@ -114,21 +115,17 @@ Known problems live in [docs/known-issues.md](docs/known-issues.md).
 
 ## Documentation
 
-| | |
-|---|---|
-| [Set up over Wi-Fi](docs/setup-wifi.md) | The normal path, and what to do when the PC is not found. |
-| [Set up over USB](docs/setup-usb.md) | USB tethering, for when you would rather not use Wi-Fi. |
-| [HDR](docs/hdr.md) | What has to be true on both ends, and how to tell whether you are getting it. |
-| [Pen](docs/pen.md) | Pressure and tilt, and the Windows Ink settings that some apps need. |
-| [Webcam](docs/webcam.md) | Using the device camera as "PrismDesk Camera". |
-| [Devices](docs/devices.md) | What has been tested, and what people report. |
-| [Known issues](docs/known-issues.md) | Current problems and workarounds. |
-| [FAQ](docs/faq.md) | Licences, latency, frame rates, and the other recurring questions. |
-| [SmartScreen](docs/smartscreen.md) | Why Windows warns about the installer. |
+Setup over Wi-Fi and USB, HDR, pen, webcam, devices, known issues and the FAQ
+are listed in **[docs/](docs/README.md)** — also on the website at
+[https://prismdesk.app/docs](https://prismdesk.app/docs). Japanese: [docs/ja/](docs/ja/README.md) ·
+[https://prismdesk.app/ja/docs](https://prismdesk.app/ja/docs).
+
+**Something not working?** Start with [Troubleshooting](docs/troubleshooting.md):
+find the message you see, and what to do about it.
 
 ## Price
 
-**US$22.** One-time purchase. No subscription, no account. The free edition covers the basics — one device, SDR, pen and touch input, and audio. Pro adds HDR, up to four devices at once, and your device camera as a Windows webcam. Pro is sold by Polar
+**US$22.** One-time purchase. No subscription, no account. The free edition covers the basics — one device, SDR, pen and touch input, and audio. Pro adds HDR, up to four devices at once, your device camera as a Windows webcam, and input device mode — the device as a pen tablet with shortcut keys for a screen your PC already has. Pro is sold by Polar
 Software, Inc. as merchant of record, and one key covers three of your own
 Windows PCs. If it does not work on a PC that meets the requirements and it
 cannot be fixed with you, there is a refund within 14 days — see

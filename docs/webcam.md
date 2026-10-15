@@ -4,14 +4,20 @@ While PrismDesk is running, the camera of the connected device shows up on the
 PC as an ordinary Windows camera called **PrismDesk Camera**. Any app that lists
 cameras can pick it.
 
+The camera is part of **PrismDesk Pro**. With the free edition on the PC, the
+app says *Using the device camera as a webcam is part of PrismDesk Pro. This
+host is running the free edition.*
+
 ## Turning it on
 
-1. On the PC, open the host window → **Settings** → **Virtual camera**, and turn
-   on *Publish the camera of the device as a Windows virtual camera*.
-   The same section shows **Virtual camera: registered with Windows** once it is
-   there.
+1. On the PC, open the host window → **Settings** → **Virtual camera**, and
+   check that *Publish the camera of the device as a Windows virtual camera* is
+   on. It is on by default. The same section shows **Virtual camera: registered
+   with Windows** once it is there.
 2. On the device, connect as usual, then swipe left from the handle at the
-   right edge of the picture for the control menu, and tap **Camera**.
+   right edge of the picture for the control menu, and tap **Camera**. The
+   button is there only while step 1 is on, and Android asks for camera
+   permission the first time.
 3. In the app on the PC, choose **PrismDesk Camera**.
 
 **The camera exists only while PrismDesk is running on the PC.** Stopping the
@@ -21,7 +27,7 @@ host removes the device from Windows; starting it puts it back.
 
 | | |
 |---|---|
-| **What the device captures** (resolution, frame rate) | The Android app: Settings → Camera. Only what the camera actually reports is offered. |
+| **What the device captures** (resolution, frame rate) | The Android app: Settings → Camera (Pro). Only what the camera actually reports is offered. |
 | **What Windows is offered** (the resolution and frame rate other apps see) | The host window: Settings → Virtual camera → *Output resolution*. |
 
 Raising the capture side above what the host puts out only costs data and heat.
@@ -99,7 +105,8 @@ error.
 camera lives and dies with the host, so stopping the host removes the camera
 device from Windows, and an app that is still holding it may not cope. On a real
 machine the Windows Camera app had to be forced to close. Changing the output
-resolution in the host window does the same thing.
+resolution in the host window does the same thing. The host warns you first
+when an app is reading the camera.
 
 Open the app again and select the camera again, and it comes back. How other
 apps behave in this situation has not been measured.

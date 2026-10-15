@@ -9,10 +9,14 @@ the product itself is closed source.
 
 ### Does it work over the internet, or from a café?
 
-No. The PC and the device have to be on the same local network — over Wi-Fi, over
-Ethernet, or over [USB tethering](setup-usb.md). PrismDesk is a second monitor,
-not remote desktop, and it is not a way to reach your desktop from somewhere
-else.
+Not over the internet. The PC and the device have to be on the same local
+network — over Wi-Fi, over Ethernet, or over [USB tethering](setup-usb.md).
+PrismDesk is a second monitor, not remote desktop, and it is not a way to reach
+your desktop from somewhere else.
+
+With both in front of you in a café or a hotel, whose Wi-Fi often keeps devices
+apart, turn on **Mobile hotspot** on the PC and connect the device to it — see
+[Troubleshooting](troubleshooting.md#on-public-wi-fi).
 
 ### Does it work on Windows 10?
 
@@ -45,7 +49,7 @@ If you know how you would measure it, we would like to hear it —
 ### Do I need a licence for every PC?
 
 No. **One key covers three of your own Windows PCs.** PrismDesk is
-US$22 — One-time purchase. No subscription, no account. The free edition covers the basics — one device, SDR, pen and touch input, and audio. Pro adds HDR, up to four devices at once, and your device camera as a Windows webcam. Pro is sold by Polar Software,
+US$22 — One-time purchase. No subscription, no account. The free edition covers the basics — one device, SDR, pen and touch input, and audio. Pro adds HDR, up to four devices at once, your device camera as a Windows webcam, and input device mode — the device as a pen tablet with shortcut keys for a screen your PC already has. Pro is sold by Polar Software,
 Inc. as merchant of record. If it does not work on a PC that meets the
 requirements and we cannot fix it with you, there is a refund within 14 days:
 [https://prismdesk.app/refund](https://prismdesk.app/refund).
@@ -68,7 +72,7 @@ button**, and never in the background or at start-up:
 **Press neither, and the app never leaves your own network.**
 
 **PrismDesk Pro contacts our payment provider, Polar, only when you press
-Activate, Check licence or Deactivate this PC** — never in the background and
+Activate, Check license or Deactivate this PC** — never in the background and
 never at start-up. What is sent is the licence key you typed in and a name for
 this PC that the app shows you first. After that, Pro needs no connection,
 and it keeps working even when Polar is unreachable. See
@@ -108,8 +112,9 @@ on such a panel is SDR. See [HDR](hdr.md).
 
 ### Can I use more than one device at once?
 
-Yes, up to four, sharing one capture and one encoder. Four is the number that was
-verified — see [Devices](devices.md).
+Yes, with PrismDesk Pro: up to four, sharing one capture and one encoder. Four
+is the number that was verified — see [Devices](devices.md). The free edition
+connects one device at a time.
 
 ### Does sound come across?
 
@@ -122,5 +127,11 @@ The driver, the firewall rules, the start-up entry and the virtual camera
 registration all go, and settings and diagnostic logs are deleted by default —
 the uninstaller offers to keep them if you would rather.
 
-See also: [Known issues](known-issues.md) · [Devices](devices.md) ·
+One thing stays: the driver's signing certificate that the installer added to
+the machine's *Trusted Publishers*. To remove it, open `certlm.msc` →
+**Trusted Publishers** → **Certificates** and delete the **Masato Okumura**
+certificate.
+
+See also: [Troubleshooting](troubleshooting.md) · [Known issues](known-issues.md) ·
+[Devices](devices.md) ·
 [Discussions](https://github.com/Asynchronous-0x4C/prismdesk-app/discussions)

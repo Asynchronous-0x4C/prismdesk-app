@@ -65,13 +65,21 @@ thing to do with any executable from a small vendor, ours included.
 After SmartScreen, Windows asks for administrator rights. That one is not about
 reputation — the installer genuinely needs them, because it:
 
-- installs the virtual display driver into the Windows driver store,
+- installs the virtual display driver into the Windows driver store, and adds
+  the driver's signing certificate to the machine's *Trusted Publishers*,
 - adds six inbound firewall rules (one per port — see
   [Set up over Wi-Fi](setup-wifi.md)),
-- registers the virtual camera,
-- creates the sign-in start-up entry, if you left that ticked.
+- creates the sign-in start-up entry, if you left that ticked — a Task Scheduler
+  task, so that the host can start with administrator rights without asking
+  you at every sign-in.
 
-Uninstalling reverses all four.
+The virtual camera is not registered by the installer: the host registers it
+while it runs, unless you turn the camera off (see [Webcam](webcam.md)).
+
+Uninstalling removes the driver, the firewall rules, the start-up entry and the
+camera registration. It does not remove the certificate from *Trusted
+Publishers*; to remove it, open `certlm.msc` → **Trusted Publishers** →
+**Certificates** and delete the **Masato Okumura** certificate.
 
 ## What we do not do about it
 

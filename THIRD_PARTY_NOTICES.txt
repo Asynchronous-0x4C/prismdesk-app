@@ -1,11 +1,11 @@
 PrismDesk - Third-Party Software Notices
 ========================================
 
-Product   : PrismDesk for Windows 1.0.0
+Product   : PrismDesk for Windows 1.1.0
 Applies to: WindowsHost.exe, PrismDeskSetup.exe, PrismDeskCam.dll,
             Driver\PrismDeskVdd.dll, Driver\PrismDeskVdd.inf, Driver\PrismDeskVdd.cat,
-            and the PrismDesk installer (PrismDesk-1.0.0-setup.exe)
-Updated   : 2026-09-06
+            and the PrismDesk installer (PrismDesk-1.1.0-setup.exe)
+Updated   : 2026-10-10
 
 PrismDesk is proprietary software licensed under the PrismDesk End User
 License Agreement (EULA.txt). It incorporates the third-party components

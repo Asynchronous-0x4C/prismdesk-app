@@ -95,7 +95,7 @@ body:
     id: device
     attributes:
       label: Android device and version
-      placeholder: "Lenovo Tab M11, Android 16"
+      placeholder: "Lenovo TB373FU, Android 16"
     validations:
       required: true
 

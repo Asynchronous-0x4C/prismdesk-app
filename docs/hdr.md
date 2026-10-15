@@ -15,6 +15,7 @@ when it does not.
 | **The device's display reports HDR10 or HLG** | This is what Android reports about the panel, not what the panel is worth. |
 | **The panel can go brighter than SDR** | Android reports the ratio. If it tops out at 1.0, HDR10 would look exactly like SDR, so the default stays SDR. |
 | **The PC can encode 10-bit** | Asked once when the host starts. A GPU that cannot do it keeps HDR off rather than failing every time you connect. |
+| **The PC runs PrismDesk Pro** | HDR is part of Pro. With the free edition on the PC, *HDR10 (Pro)* in the **Color space** setting can't be selected and the host sends SDR. |
 
 If either of the first two is missing, the app says which one:
 
@@ -83,4 +84,5 @@ measurement, one run each.
 **What has not been measured:** GPU load with HDR against SDR, and bandwidth on
 moving content. Neither is claimed anywhere.
 
-See also: [Devices](devices.md) · [FAQ](faq.md)
+See also: [Troubleshooting](troubleshooting.md#hdr-does-not-come-through) ·
+[Devices](devices.md) · [FAQ](faq.md)
