@@ -68,15 +68,20 @@ On a **Google Pixel 9**:
 
 On the same PC, same screen, 2944x1840 at 60 Hz, ultra-low-latency profile:
 
-| Session | Frame rate | Bit rate |
-|---|---|---|
-| H.265, HDR10 | 38 fps | **2,800 kbps** |
-| H.265, SDR | 38 fps | 6,800 kbps |
-| H.264, SDR | 38 fps | 7,100 kbps |
+| Session | Bit rate |
+|---|---|
+| H.265, HDR10 | **2,800 kbps** |
+| H.265, SDR | 6,800 kbps |
+| H.264, SDR | 7,100 kbps |
 
 **HDR10 used less bandwidth than SDR here, not more.** One run per row, one PC,
 one picture on screen; treat it as "HDR does not cost bandwidth on this material"
 rather than as a rate you can plan around.
+
+**These runs were held at 38 fps by a capture-pacing bug that was fixed before
+release.** After the fix, all three sessions run at 60 fps on the same setup. The
+bit rates above are from the 38 fps runs; bandwidth at 60 fps has not been
+re-measured yet.
 
 Starting a session took **0.97 s with HDR and 0.82 s without** — the same
 measurement, one run each.
